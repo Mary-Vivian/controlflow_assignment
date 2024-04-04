@@ -15,14 +15,16 @@ numbersarray([9,8,7,6,3,4])
 
 // Write a program that takes in the following array and use a while loop to 
 // iterate and break when the item is equal to the fourth index :let arrNum = [1,2,3,4,5,6,7,8,9];
-let arrNum=[1,2,3,4,5,6,7,8,9];
-let i= 0;
-
-while (i<5){
-arrNum +=i+ " ";
-    i++;
+let arrNum=(numbersarray)=>{
+while(numbersarray.length>4){
+    console.log(('New number'));
+    numbersarray.pop();
+    if(numbersarray.length===4)
+    console.log('You have riched the end');
 }
-console.log((arrNum))
+}
+arrNum([1,2,3,4,5,6,7,8,9])
+
 // Write a function that takes in a an array of 
 // strings and use a continue statement when the item is at the second index:  
 // let fruits= ['apple','plum','banana','strawberries','kiwi']
@@ -31,8 +33,10 @@ console.log((arrNum))
     if(j===1) {
         continue;
     }
+    
  }
  console.log(fruits)
+
 }
  arrayOffruits(["apple","plum","banana","strawberries","kiwi"])
 //  Write a function that accepts an array of strings and console.logs 
@@ -50,7 +54,7 @@ stringsArray(["Nairobi","Thika","Eldoret","Mombasa"])
 function stringreverse(name){
     let i=name.length;
     while( i--){
-         console.log((name[i].concat("")))
+         console.log((name[i]))
 
     }
     
